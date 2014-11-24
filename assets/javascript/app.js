@@ -2,6 +2,7 @@ $(document).ready(function (){
 	geocoder = new google.maps.Geocoder();
 	$("#currentLocation").html("Searching...");
 	$("#findLocation").hide();
+	$("#change-loc").html('Not here?');
 	$("#change-loc-confirm").hide();
 	getLocation();
 });
@@ -27,7 +28,6 @@ function geoError(error) {
 		$.get("http://ipinfo.io", function(response) {
 			$("#found").html('We found you in');
 			$("#currentLocation").html(response.city + ', ' + response.region);
-			$("#change-loc").html('Not here?');
 			var latLng = response.loc.split(',');
 			getAllWeather(latLng[0], latLng[1]);
 		}, "jsonp");
