@@ -112,16 +112,15 @@ hr {
 #daily li {
 	font-family: 'FuturaPTWebLight';
 	font-weight: bold;
+	font-size: 16px;
 	list-style-type: none;
 	display: inline-block;
 	width: 35px;
-	padding-left: 0.3%;
-	padding-right: 6%;
+	padding-right: 6.2%;
 }
 
 .daily-temp-t {
 	display: block;
-	font-size: 16px;
 	color: #A6A8B2;
 }
 

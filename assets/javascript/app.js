@@ -70,14 +70,17 @@ function changeLocation() {
 			getAllWeather(lat, lng);
 		})
 		.bind("geocode:error", function(event, status){
-			// $("#error-loc").text('No location found');
+			$("#error-loc").text('No location found');
 		})
 		.bind("geocode:multiple", function(event, results){
 			$("#error-loc").text('Multiple locations found, please narrow your search');
 			// console.log("Multiple: " + results.length + " results found");
 		});
 	$("#change-loc-confirm").click(function(){
-		$("#findLocation").trigger("geocode");
+		$("#findLocation").trigger("geocode")
+		.bind("geocode:error", function(event, status){
+			$("#error-loc").text('No location found');
+		});
 	});
 	$("#change-loc-confirm").show();
 	$("#error-loc").show();
@@ -88,6 +91,7 @@ function changeLocationConfirm() {
 	$("#change-loc-confirm").hide();
 	$("#currentLocation").text('Searching...');
 	$("#currentLocation").show();
+	$("#change-loc").show();
 	
 }
 
@@ -132,8 +136,8 @@ function getForecast(lat, lon) {
 					}
 				} else {
 					for (var x = 0; x < historyToGet; x++) {
-						$("#daily li .daily-temp-t:eq(" + x + ")").text('**');
-						$("#daily li .daily-temp-i:eq(" + x + ")").text('**');
+						$("#daily li .daily-temp-t:eq(" + x + ")").text('N/A');
+						$("#daily li .daily-temp-i:eq(" + x + ")").text('N/A');
 					}
 				}
 			});
