@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'FuturaPTWebBold';
+    src: url('FTN85_W/FTN85_W.eot');
+    src: url('FTN85_W/FTN85_W.eot?#iefix') format('embedded-opentype'),
+         url('FTN85_W/FTN85_W.woff') format('woff'),
+         url('FTN85_W/FTN85_W.ttf') format('truetype'),
+         url('FTN85_W/FTN85_W.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPTWeb';
+    src: url('FTN55_W/FTN55_W.eot');
+    src: url('FTN55_W/FTN55_W.eot?#iefix') format('embedded-opentype'),
+         url('FTN55_W/FTN55_W.woff') format('woff'),
+         url('FTN55_W/FTN55_W.ttf') format('truetype'),
+         url('FTN55_W/FTN55_W.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPTWebBook';
+    src: url('FTN45_W/FTN45_W.eot');
+    src: url('FTN45_W/FTN45_W.eot?#iefix') format('embedded-opentype'),
+         url('FTN45_W/FTN45_W.woff') format('woff'),
+         url('FTN45_W/FTN45_W.ttf') format('truetype'),
+         url('FTN45_W/FTN45_W.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPTWebLight';
+    src: url('FTN35_W/FTN35_W.eot');
+    src: url('FTN35_W/FTN35_W.eot?#iefix') format('embedded-opentype'),
+         url('FTN35_W/FTN35_W.woff') format('woff'),
+         url('FTN35_W/FTN35_W.ttf') format('truetype'),
+         url('FTN35_W/FTN35_W.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

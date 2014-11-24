@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>weathur.ly</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/fonts/Futura/futura.css">
+	<link rel="stylesheet" href="assets/stylesheets/main2x.css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="assets/javascript/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+	<script type="text/javascript" src="assets/geocomplete/jquery.geocomplete.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div class="header">
+		<img src="assets/img/weathurly_logo.png" alt="Weathurly logo" class="title-logo">
+		<div class="loc-container">
+			<p id="found" class="found"></p>
+			<div>
+				<span id="currentLocation" class="currentLocation"></span>
+				<input id="findLocation" class="findLocation" />
+				<input type="button" id="change-loc-confirm" class="change-loc-confirm" onclick="changeLocationConfirm();" value="Submit" />
+			</div>
+			<a href="#" onclick="changeLocation();" id="change-loc" class="change-loc"></a>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="content">
+		<div id="current-weather" class="current-weather">
+			<span id="current-temp" class="current-temp"></span>
+			<span id="current-conditions" class="current-conditions"></span>
+		</div>
+		<div id="forecast" class="forecast">
+			<hr>
+			<ul id="times" class="times">
+				<li class="day-time">12a</li>
+				<li class="day-time">3a</li>
+				<li class="day-time">6a</li>
+				<li class="day-time">9a</li>
+				<li class="day-time">12p</li>
+				<li class="day-time">3p</li>
+				<li class="day-time">6p</li>
+				<li class="day-time">9p</li>
+			</ul>
+			<hr>
+			<ul id="daily" class="daily">
+				<li id="temp-12a" class="daily-temp">
+					<div>
+						<span id="temp-12a-t" class="daily-temp-t">**</span>
+						<span id="temp-12a-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-3a" class="daily-temp">
+					<div>
+						<span id="temp-3a-t" class="daily-temp-t">**</span>
+						<span id="temp-3a-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-6a" class="daily-temp">
+					<div>
+						<span id="temp-6a-t" class="daily-temp-t">**</span>
+						<span id="temp-6a-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-9a" class="daily-temp">
+					<div>
+						<span id="temp-9a-t" class="daily-temp-t">**</span>
+						<span id="temp-9a-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-12p" class="daily-temp">
+					<div>
+						<span id="temp-12p-t" class="daily-temp-t">**</span>
+						<span id="temp-12p-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-3p" class="daily-temp">
+					<div>
+						<span id="temp-3p-t" class="daily-temp-t">**</span>
+						<span id="temp-3p-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-6p" class="daily-temp">
+					<div>
+						<span id="temp-6p-t" class="daily-temp-t">**</span>
+						<span id="temp-6p-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+				<li id="temp-9p" class="daily-temp">
+					<div>
+						<span id="temp-9p-t" class="daily-temp-t">**</span>
+						<span id="temp-9p-i" class="daily-temp-i">**</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer">
+		<div class="sms-container">
+			<span class="sms-info">Register for SMS alerts for this location</span>
+			<div class="clear"></div>
+			<input type="text" id="sms-input" class="sms-input" onkeyup="validatePhoneNumber();" placeholder="555-555-5555" />
+			<span id="sms-error" class="sms-error"></span>
+			<div class="clear"></div>
+			<input type="button" onclick="getAlerts();" value="Get alerts" class="get-alerts" />
+		</div>
+		<img src="assets/img/weathurly_logo_grey.png" alt="Weathurly logo gray" class="footer-logo">
+	</div>
+</body>
+</html>
