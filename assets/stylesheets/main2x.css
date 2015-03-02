@@ -107,7 +107,7 @@ hr {
 	font-size: 36px;
 	list-style-type: none;
 	display: inline-block;
-	padding-right: 4%;
+	width: 10%;
 }
 
 .day-time {
@@ -120,8 +120,7 @@ hr {
 	font-size:36px;
 	list-style-type: none;
 	display: inline-block;
-	width: 70px;
-	padding-right: 8%;
+	width: 10%;
 }
 
 .daily-temp-t {

@@ -102,7 +102,7 @@ hr {
 	font-weight: bold;
 	list-style-type: none;
 	display: inline-block;
-	padding-right: 4.5%;
+	width: 7.5%;
 }
 
 .day-time {
@@ -115,8 +115,7 @@ hr {
 	font-size: 16px;
 	list-style-type: none;
 	display: inline-block;
-	width: 35px;
-	padding-right: 6.2%;
+	width: 7.5%;
 }
 
 .daily-temp-t {
@@ -135,7 +134,7 @@ img.daily-temp-icon  {
 }
 
 .footer {
-	height: 290px;
+	height: 100%;
 	background-color: #2A2A33;
 }
 
